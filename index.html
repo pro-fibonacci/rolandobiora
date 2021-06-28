@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Roland's potfolio</title>
+
+    <script src="./css/qunit.js.download"></script>
+    <script src="./css/bootstrap.min.js"></script>
+    <script src="./css/jquery.countdown.min.js"></script>
+    <script src="./css/jquery.dd.min.js"></script>
+    <script src="./css/jquery-1.9.1.min.js.download"></script>
+    <script src="./css/jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src='./css/jquery.js'></script>
+    <script src="./css/popper.min.js.download"></script>
+    <script src="./css/bootstrap.js.download"></script>
+    <script src='./css/scripts.js'></script>
+    <script src='owl.carousel.min.js'></script>
+    <script src='./css/imagesloaded.pkgd.min.js'></script>
+     
+
+
+    <link rel="stylesheet" href="owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap.css" >
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+      #title {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-brand {
+  position: fixed;
+}
+.top-social {
+  float: left;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-right: 1px solid #e5e5e5;
+}
+.top-social a {
+  color: #252525;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.dropdown {
+  position: relative;
+  text-align: right;
+}
+/*---styling the navbar---*/
+.container-fluid {
+  background-color: rgb(219, 219, 245);
+  padding: 1% 5%;
+}
+#nav {
+  background-color: rgb(219, 219, 245);
+}
+.btn1 {
+  margin: 4px;
+  border-radius: 20px;
+  padding: 2px 40px;
+  font-size: 15px;
+  background-color: rgb(5, 5, 58);
+  color: white;
+  border: 2px solid black;
+  transition: 0.6s;
+  width: 25%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn2 {
+  margin: 4px;
+  border-radius: 20px;
+  padding: 2px 40px;
+  font-size: 15px;
+  background-color: rgb(6, 5, 12);
+  color: white;
+  border: 2px solid black;
+  transition: 0.6s;
+  width: 25%;
+}
+.btn1:hover {
+  background-color: white;
+  color: black;
+}
+.btn2:hover {
+  background-color: white;
+  color: black;
+}
+.nav-item {
+  margin: 20px;
+}
+/*intro section style */
+#intro-section {
+  padding: 10% 5%;
+  border-radius: 30px;
+}
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.headingP {
+  color: white;
+}
+.headingP1 {
+  color: white;
+  background-color: black;
+}
+#headingClass {
+  color: white;
+}
+
+.heading{
+  margin-bottom: 30px;
+}
+.intro {
+  text-align: left;
+  padding: 15% 5%;
+}
+.into {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.profile-img {
+  width: 400px;
+  height: 70%;
+}
+.btn-intro {
+  border-radius: 20px;
+  background-color: rgb(5, 5, 58);
+  color: white;
+  padding: 2px 40px;
+}
+.btn-intro1 {
+  border-radius: 20px;
+  background-color: rgb(6, 5, 12);
+  color: white;
+  margin-top: 40px;
+  padding: 2px 40px;
+}
+.btn-intro:hover {
+  background-color: white;
+  color: black;
+}
+.btn-intro1:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-items .single-hero-items {
+  height: 725px;
+  padding-top: 210px;
+}
+
+.hero-items .single-hero-items span {
+  color: #e7ab3c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 28px;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  opacity: 0;
+}
+
+.hero-items .single-hero-items h1 {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  margin-right: 30px;
+}
+
+.hero-items .single-hero-items p {
+  margin-bottom: 42px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.hero-items .single-hero-items .primary-btn {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.hero-items .off-card {
+  height: 154px;
+  width: 154px;
+  padding-top: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 140px;
+  position: absolute;
+  left: 47%;
+  top: 160px;
+  background: #2623be;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.hero-items .off-card:after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border: 2px dashed #ffffff;
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-items .off-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero-items .off-card h2 span {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.hero-items .owl-item.active .single-hero-items span,
+.hero-items .owl-item.active .single-hero-items h1,
+.hero-items .owl-item.active .single-hero-items p,
+.hero-items .owl-item.active .single-hero-items .primary-btn {
+  top: 0;
+  opacity: 1;
+}
+
+.hero-items .owl-item.active .single-hero-items span {
+  -webkit-transition: all 0.2s ease 0.2s;
+  -o-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+}
+
+.hero-items .owl-item.active .single-hero-items h1 {
+  -webkit-transition: all 0.4s ease 0.4s;
+  -o-transition: all 0.4s ease 0.4s;
+  transition: all 0.4s ease 0.4s;
+}
+
+.hero-items .owl-item.active .single-hero-items p {
+  -webkit-transition: all 0.6s ease 0.6s;
+  -o-transition: all 0.6s ease 0.6s;
+  transition: all 0.6s ease 0.6s;
+}
+
+.hero-items .owl-item.active .single-hero-items .primary-btn {
+  -webkit-transition: all 0.8s ease 0.8s;
+  -o-transition: all 0.8s ease 0.8s;
+  transition: all 0.8s ease 0.8s;
+}
+
+.hero-items .owl-item.active .single-hero-items .off-card {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 1s ease 1s;
+  -o-transition: all 1s ease 1s;
+  transition: all 1s ease 1s;
+}
+
+.hero-items .owl-nav button[type="button"] {
+  font-size: 30px;
+  position: absolute;
+  left: 40px;
+  top: 45%;
+  color: #252525;
+}
+
+.hero-items .owl-nav button[type="button"]:hover {
+  color: #dfad51;
+}
+
+.hero-items .owl-nav button[type="button"].owl-next {
+  left: auto;
+  right: 40px;
+}
+.set-bg {
+  border-radius: 30px;
+  height: 700px;
+  width: 700px;
+  margin-left: 450px;
+}
+
+.countdown-timer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.countdown-timer .cd-item {
+  display: inline-block;
+  background: #ffffff;
+  margin-right: 35px;
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+.countdown-timer .cd-item:last-child {
+  margin-right: 0;
+}
+
+.countdown-timer .cd-item span {
+  color: blue;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 36px;
+}
+
+.countdown-timer .cd-item p {
+  font-size: 16px;
+  color: #b2b2b2;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/*---------------------
+  Banner Section
+-----------------------*/
+
+/* key features section */
+.container-key-features {
+  background-color: rgb(5, 5, 58);
+  padding: 10% 5%;
+  text-align: center;
+  border-radius: 30px;
+  border-spacing: 20px;
+}
+.head {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  text-align: center;
+  bottom: 50px;
+}
+.feature-desciption {
+  color: white;
+}
+.feature-head {
+  color: white;
+}
+.col-lg-4:hover {
+  background-color: rgb(9, 7, 20);
+  border-radius: 2%;
+  height: 50%;
+  position: relative;
+}
+.design-img {
+  height: 60%;
+  width: 50%;
+}
+/* comment section style */
+#comment {
+  background-color: rgb(219, 219, 245);
+  padding: 10% 5%;
+  border-radius: 30px;
+  text-align: center;
+}
+.comment-header {
+  font-size: 2rem;
+  color: black;
+  position: relative;
+  bottom: 100px;
+}
+.comment-body {
+  letter-spacing: 1px;
+  background-color: rgb(8, 8, 99);
+  display: inline-flexbox;
+  color: white;
+}
+.comment-images {
+  border-radius: 100px;
+  width: 150px;
+}
+.comment-occupation {
+  position: relative;
+  left: 150px;
+  bottom: 50px;
+  opacity: 0.5;
+}
+/* contact */
+#contact {
+  background-color: rgb(8, 8, 99);
+  padding: 5% 5%;
+  border-radius: 30px;
+  color: white;
+}
+.footer-section {
+  background-color: white;
+  padding: 2% 2%;
+}
+.footer-widget {
+  margin-left: 250%;
+  margin-bottom: 30%;
+}
+
+.copyright-reserved {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.submit-btn {
+  margin: 4px;
+  border-radius: 20px;
+  padding: 2px 40px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.6s;
+  width: 25%;
+}
+.submit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer-left .footer-social {
+  padding-top: 25px;
+}
+
+.footer-left .footer-social a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: #434445;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-left .footer-social a:hover:before {
+  opacity: 1;
+}
+
+.footer-left .footer-social a:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #3a26ee;
+  content: "";
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <section id="title">
+        <!-- Nav Bar -->
+       <div id="button">
+        <div class="container-fluid"> 
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown"><h6>ENGLISH</h6></button>
+               <ul class="dropdown-menu">
+                 <li><a href="index.html"><h6>LE francias</h6></a> </li>
+              
+               </ul>
+          </div>
+          <div class="top-social">
+              <a href="https://www.facebook.com/roland.chima.1004"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/__rolandobiora?r=nametag"><i class="fa fa-instagram"></i></a>
+              <a href="https://mobile.twitter.com/__rolandobiora"><i class="fa fa-twitter"></i></a>
+              
+          </div>
+        </div>
+        <section id="nav">
+          <nav class="navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html" style="font-family: fantasy;"><h1>OBI DEV</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+              
+                </li>
+                <button type="button" class="btn1 "><a href="#key-features">SERVICES</a></button>
+                <button type="button" class="btn2 "><a href="#contact">CONTACT</a> </button>
+              </ul>
+            </div>
+          </nav>
+        </section>
+
+
+  <div id="intro-section">
+    <div class="intro">
+        <section class="hero-section">
+          <div class="">
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-5">
+                      <h1 class="heading">Hello Dear</h1>
+                      <p class="heading">   Am roland obiora chima , a web designer and developer. I do project planning and management along side.
+                        A computer science undergraduate . A voraious Enterprenuer. Welcome to my online profile </p>
+                      <a href="#" class="primary-btn"></a>
+                  </div>
+              </div>
+              <div class="image">
+                <img src="profile.jpg" class="set-bg">
+               
+                     
+          <div class="countdown-timer" id="countdown">
+            <div class="cd-item">
+                <span>10+</span>
+                <p>Works</p>
+            </div>
+            <div class="cd-item">
+                <span id="countdown">10+</span>
+                <p>Clients</p>
+            </div>
+            <div class="cd-item">
+                <span>4</span>
+                <p>Colloborators</p>
+            </div>
+            <div class="cd-item">
+                <span>24</span>
+                <p>hours</p>
+            </div>
+        </div>
+
+
+
+      </section>
+    </div>
+  </div>
+
+
+
+      <!-- Hero Section End -->
+
+
+       
+    <section id="key-features"> 
+      <div class="container-key-features">
+        <span class="head">SERVICES</span>
+        <div class="row">
+          <div class="col-lg-4">
+           <img class="design-img" src="web design.png " alt="web design logo">
+           <h1 class="feature-head"> Web and Logo Design </h1>
+           <h6 class="feature-desciption">
+             Provide you with premium logo design for both new and old companies and ventures . 
+             Also give best web pages prototypes and templates.
+           </h6>
+          </div>
+         
+          
+          <div class="col-lg-4">
+            <img class="developer-img" src="web developer.png" alt="web developer images">
+            <h1 class="feature-head">Web development</h1>
+            <h6 class="feature-desciption">
+             Develop web pages, pure backend integrations both simple and complex. 
+             Major specializations on Node.js and Python Django frameworks
+           </h6>
+           
+         </div>
+         
+         <div class="col-lg-4">
+            <img class="database-image" src="database designer.png" alt="database images">
+            <h1 class="feature-head">Database Designs </h1>
+            <h6 class="feature-desciption">
+            Provide specialized consolation on database archiect and design and insight to various forms of database
+            alongside with cyber security. 
+           </h6>
+         </div>
+         </div>
+      </div>
+     </section> 
+     <!---comment section -->
+  <section id="comment">
+    <span class="comment-header">
+      REVIEWS
+    </span>
+    <div class="card">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card body comment-body">
+            "Played a major role in our work, he loves what he is doing"
+          </div>
+          <div class="footer">
+            <span><img class="comment-images" src="chibututu.jpg"> CHIBUTUTU NNAMANI </span><br>
+            <span class="comment-occupation"> CEO muzikmylz</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card body comment-body">
+            "Partnered with him on a game development prototype" 
+          </div>
+          <div class="footer">
+            <span><img class="comment-images" src="racer.jpg">  CHUKWUEBUKA RACER </span><br>
+            <span class="comment-occupation">GAME DEVELOPER</span>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="card body comment-body">
+            "Have worked with him on a lot of my companies work . he is above average"
+          </div>
+          <div class="footer">
+            <span><img class="comment-images" src="leroy.jpg"> LEORY NNAEDOZIE </span><br>
+            <span class="comment-occupation">CEO  TECH ASSIST</span>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="card body comment-body">
+          "Always available for collaboration . he loves to learn more"
+          </div>
+          <div class="footer">
+            <span><img class="comment-images" src="mc connell.jpg"> MC CONNELL</span><br>
+            <span class="comment-occupation">Django developer</span>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </section>
+           <!---contact me-->
+           <div id="contact">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="contact-title">Get in Touch</h2>
+              </div>
+              
+              <div class="col-lg-4">
+                <div class="media contact-info">
+                  <span class="contact-info__icon"><i class="ti-home"></i></span>
+                  <div class="media-body">
+                    <h3>NSUKKA, ENUGU STATE .</h3>
+                    <p>UNN, CA WAY</p>
+                  </div>
+                </div>
+                <div class="media contact-info">
+                  <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                  <div class="media-body">
+                    <h3>+234 8167366577</h3>
+                    <h3>+234 7059342066</h3>
+                    <p>Mon to Fri 9am to 6pm</p>
+                  </div>
+                </div>
+                <div class="media contact-info">
+                  <span class="contact-info__icon"><i class="ti-email"></i></span>
+                  <div class="media-body">
+                    <h3>send me mail:<a href="mailto:rolandobiora@gmail.com">rolandobiora@gmail.com</a> </h3>
+                    <p>Send us your query anytime!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- ================ contact section end ================= -->
+           </div>
+   <!-- Footer Section Begin -->
+   <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>Address: UNN, Nsukka , Enugu state.</li>
+                        <li>Phone: +234 8167366577</li>
+                        <li>Email:rolandobiora@gmail.com</li>
+                    </ul>
+             
+                    <div class="footer-social">
+                      <a href="https://www.facebook.com/roland.chima.1004"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/__rolandobiora?r=nametag"><i class="fa fa-instagram"></i></a>
+                      <a href="https://mobile.twitter.com/__rolandobiora"><i class="fa fa-twitter"></i></a>
+                      
+                  </div>
+          </div>
+          </div>
+          
+           
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-widget">
+                    <h5>Information</h5>
+                    <ul>
+                        
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#key-features">Serivces</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-reserved">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="copyright-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | designed by <a href="" target="_blank">roland obiora</a>
+
+            </div>
+             </div>
+            </div>
+                  </div>
+                  </div>
+  </body>
+</html>
